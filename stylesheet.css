@@ -49,3 +49,24 @@
 .buttonTheme{
     height: 50%;
 }
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    width: auto;
+    
+}
+
+.project{
+    border: 2px dotted aliceblue;
+    
+    padding: 5%;
+    margin-left: 20%;
+    justify-self: center;
+}
+
+.projImage{
+    
+    height: 200px;
+}
