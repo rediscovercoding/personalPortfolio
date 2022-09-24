@@ -1,19 +1,22 @@
 .bodyClassDark{ 
     background-color: black;
     color: white;
+    background-image: url('./images/layered-waves-haikei.svg');
+    background-size: cover;
 }
 .bodyClassLight{
     background-color:whitesmoke;
-    
+    background-image: url('./images/layered-waves-haikei_light.svg');
+    background-size: cover;
 }
 .siteHeader{
     
     display: flex;
-    margin-left: 5%;
 }
 
 .navigationBar{
-    
+    min-width: 30%;
+    flex-wrap: wrap;
     display: flex;
     flex: 3;
     justify-content: flex-end;
@@ -26,6 +29,7 @@
     display: flex;
     align-content: center;
     justify-content: center;
+    color:black
 }
 
 .flaskImage{
@@ -53,20 +57,40 @@
 .projects{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
-    width: auto;
-    
+    column-gap: 10px;
 }
 
 .project{
-    border: 2px dotted aliceblue;
-    
     padding: 5%;
     margin-left: 20%;
     justify-self: center;
+    gap: 5%;
 }
 
 .projImage{
-    
     height: 200px;
+    border-radius: 2%;
+    box-shadow: 4px 4px;
+}
+.projImage:hover{
+    box-shadow: 6px 6px;
+    color: red;
+    transform: scale(1.1);
+}
+
+.projHeading{
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.topRow{
+    
+    width: 200px;
+    height: 250px;
+}
+
+.bottomRow{
+    width: 300px;
+    height: 200px;
+    
 }
