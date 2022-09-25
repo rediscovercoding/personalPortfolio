@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KD Portfolio</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter+Tight:wght@300&family=Montserrat&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body id="bodyId" class="bodyClassDark">
@@ -13,12 +16,12 @@
         <div class="siteHeader">
         <div class="siteName">K. D. Portfolio</div>
         <nav class="navigationBar">    
-            <button id="buttonContact">Contact</button>
+            <button id="buttonContact" onclick="contactPopUp()">Contact</button>
             <button id="buttonTheme" onclick="themeChange()">Light Theme</button>
         </nav> 
         </div>
         <div class="aboutMe">
-            <img class="flaskImage" src="./images/Thumbnail_Chemistry.png" alt="flaskExperiment">
+            <img class="flaskImage" src="./images/20120518_085132.jpg" alt="flaskExperiment">
             <div class="aboutMeWriteUp">
                 <h4 class="devWriteUp">I am looking for web development opportunities</h4>
                 <p class="devWriteUp">I am looking for a first experience as a front end developer.<br> My interests include web-development, 3D-printing, drawing, animation, photography and image manipulation, Sci-fi Literature, mixology and chemistry</p>
@@ -52,8 +55,12 @@
                 <p>Dashboard</p>
             </div>
         </div>
-        <div class="contactMe">
-            
+        <div class="contactContainer" id="contactContainer">
+            <label for="messageText">Leave your message here</label>
+            <img src="./images/close-circle-outline (2).png" alt="close" class="closeButton" onclick="closePopUp()">
+            <textarea name="message" id="messageText" cols="40" rows="15"></textarea>
+            <button style="display: block; align-content: center" id="sendButton">Send</button>
+            <button style="display: block; align-content: center" id="closeButton" onclick="closePopUp()">Close</button>
         </div>
     </div>
 </body>
