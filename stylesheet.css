@@ -63,13 +63,13 @@ font-family: 'Montserrat', sans-serif; */
     height: 50%;
 }
 
-.projects{
+.projects,.skillsContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
 }
 
-.project{
+.project {
     padding: 5%;
     margin-left: 20%;
     justify-self: center;
@@ -87,7 +87,7 @@ font-family: 'Montserrat', sans-serif; */
     transform: scale(1.1);
 }
 
-.projHeading{
+.projHeading,.skillsHeading,.skillsIcons{
     grid-column: 1/4;
     text-align: center;
 }
@@ -126,6 +126,9 @@ font-family: 'Montserrat', sans-serif; */
     left: 65%;
     top: 15%;
 }
+
+
+
 
 @media (max-width:600px){
     .project{
