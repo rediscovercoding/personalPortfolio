@@ -21,10 +21,14 @@
   <body id="bodyId" class="bodyClassDark">
     <div class="container">
       <div class="siteHeader">
-        <div class="siteName">K. D. Portfolio</div>
+        <div class="siteName">Koustubh Dube</div>
         <nav class="navigationBar">
-          <button id="buttonContact" onclick="contactPopUp()">Contact</button>
-          <button id="buttonTheme" onclick="themeChange()">Light Theme</button>
+          <button id="buttonContact" onclick="contactPopUp()" class="button-17">
+            Contact
+          </button>
+          <button id="buttonTheme" onclick="themeChange()" class="button-17">
+            Toggle Theme
+          </button>
         </nav>
       </div>
       <div class="aboutMe">
@@ -34,13 +38,21 @@
           alt="flaskExperiment"
         />
         <div class="aboutMeWriteUp">
-          <h4 class="devWriteUp">
-            I am looking for web development opportunities
+          <h4 class="devWriteUp" style="font-size: 2rem">
+            Friendly Developer/Scientist
           </h4>
-          <p class="devWriteUp">
+          <p
+            class="devWriteUp"
+            style="
+              width: 450px;
+              text-shadow: none;
+              color: rgb(196, 255, 198);
+              font-size: 1.5rem;
+            "
+          >
             My interests include web-development, 3D-modeling/printing,
-            animation, photography, image manipulation, sci-fi literature,
-            mixology, chemistry and learning something new.
+            animation, photography, image manipulation and learning new
+            technologies.
           </p>
         </div>
       </div>
@@ -54,7 +66,7 @@
               class="projImage topRow"
             />
           </a>
-          <p>
+          <p class="topRowP">
             Weather App: Exercise in asynchronous JavaScript and fetching data
             from web servers using APIs
           </p>
@@ -80,7 +92,7 @@
               class="projImage topRow"
             />
           </a>
-          <p>Tic Tac Toe: Exercise in JavaScript logic</p>
+          <p class="topRowP">Tic Tac Toe: Exercise in JavaScript logic</p>
           <a
             href="https://github.com/rediscovercoding/TicTacToe.git"
             style="color: inherit"
@@ -103,7 +115,7 @@
               class="projImage topRow"
             />
           </a>
-          <p>Calculator</p>
+          <p class="topRowP">Calculator</p>
           <a
             href="https://github.com/rediscovercoding/calculator.git"
             style="color: inherit"
@@ -210,6 +222,29 @@
             ></i>
           </a>
         </div>
+        <div class="project">
+          <a
+            href="https://rediscovercoding.github.io/TextInThreejs/"
+            target="_blank"
+          >
+            <img
+              src="./images/TextThreeJS.JPG"
+              alt="Three JS Screenshot"
+              class="projImage bottomRow"
+            />
+          </a>
+          <p>Text in 3D Environment: Exercise in ThreeJs</p>
+          <a
+            href="https://github.com/rediscovercoding/TextInThreejs.git"
+            style="color: inherit"
+            target="_blank"
+          >
+            <i
+              class="devicon-github-original-wordmark"
+              style="font-size: 50px"
+            ></i>
+          </a>
+        </div>
       </div>
       <div class="contactContainer" id="contactContainer">
         <label for="messageText">Leave your message here</label>
@@ -261,6 +296,11 @@
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg"
             width="100px"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original-wordmark.svg"
+            width="100px"
+            style="background-color: white"
           />
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg"
