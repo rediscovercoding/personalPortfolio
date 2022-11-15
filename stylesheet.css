@@ -57,7 +57,9 @@ font-family: 'Montserrat', sans-serif; */
 .devWriteUp {
   text-align: center;
   color: #26df57;
-  text-shadow: 1px 2px white;
+  text-shadow: 1px 1px white;
+  width: 450px;
+  font-size: 1.5rem;
 }
 
 .buttonTheme {
@@ -72,8 +74,8 @@ font-family: 'Montserrat', sans-serif; */
 }
 
 .project {
-  padding: 5%;
-  margin: auto;
+  padding-bottom: 5%;
+
   justify-self: center;
   gap: 5%;
 }
@@ -134,6 +136,9 @@ p {
   width: 300px;
   text-align: center;
 }
+.devicon-github-original-wordmark {
+  font-size: 50px;
+}
 
 @media (max-width: 600px) {
   .project {
@@ -160,6 +165,13 @@ p {
   .closeButton {
     left: 45%;
     top: 15%;
+  }
+  .devWriteUp {
+    width: 300px;
+    font-size: 1rem;
+  }
+  .devicon-github-original-wordmark {
+    font-size: 30px;
   }
 }
 
