@@ -20,6 +20,9 @@ font-family: 'Montserrat', sans-serif; */
   display: flex;
   font-size: larger;
 }
+.siteName {
+  align-self: center;
+}
 
 .navigationBar {
   min-width: 30%;
@@ -112,7 +115,8 @@ font-family: 'Montserrat', sans-serif; */
   display: none;
   grid-template-columns: 1fr 1fr;
   border: 3px solid yellow;
-  background-color: rgba(94, 86, 86, 0.664);
+  border-radius: 8px;
+  background-color: rgb(35, 35, 35);
   width: 25%;
   position: fixed;
   left: 40%;
@@ -128,6 +132,8 @@ font-family: 'Montserrat', sans-serif; */
   position: fixed;
   left: 65%;
   top: 15%;
+  background-color: #f6f9fe;
+  border-radius: 50%;
 }
 .topRowP {
   width: 200px;
